@@ -129,13 +129,13 @@ java -jar target\demo-0.0.1-SNAPSHOT.jar --server.port=8085
 4. Se abrió el puerto en el firewall: `ufw allow 8082/tcp`.
 5. Se subió el jar a una carpeta propia para no mezclarlo con el de mi compañero:
 ```bash
-ssh root@IP_DEL_VPS "mkdir -p ~/TUSINICIALESact1_t4"
-scp target\demo-0.0.1-SNAPSHOT.jar root@IP_DEL_VPS:~/TUSINICIALESact1_t4/
+ssh root@IP_DEL_VPS "mkdir -p ~/ERDact1_t4"
+scp target\demo-0.0.1-SNAPSHOT.jar root@IP_DEL_VPS:~/ERDact1_t4/
 ```
 6. Se ejecutó con `nohup` para que siga corriendo al cerrar la sesión:
 ```bash
-cd ~/TUSINICIALESact1_t4
-nohup java -jar demo-0.0.1-SNAPSHOT.jar --server.port=[PUERTO] > app.log 2>&1 &
+cd ~/ERDact1_t4
+nohup java -jar demo-0.0.1-SNAPSHOT.jar --server.port=8082 > app.log 2>&1 &
 ```
 7. Se verificó el log (`tail app.log`), con `curl http://localhost:8082/api/proyecto`, y desde el navegador de mi laptop.
 
@@ -176,5 +176,5 @@ En Linux o Mac: `./mvnw spring-boot:run`. Por defecto corre en el puerto 8080. P
 
 ## Enlaces
 
-- Repositorio de esta actividad: [PEGAR LINK DE GITHUB]
+- Repositorio de esta actividad:https://github.com/23161115-estud/ERDact1_t4-.git
 - Proyecto corriendo en el VPS: http://216.238.69.86:8082/api/proyecto
