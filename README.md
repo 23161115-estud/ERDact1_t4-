@@ -178,3 +178,6 @@ En Linux o Mac: `./mvnw spring-boot:run`. Por defecto corre en el puerto 8080. P
 
 - Repositorio de esta actividad:https://github.com/23161115-estud/ERDact1_t4-.git
 - Proyecto corriendo en el VPS: http://216.238.69.86:8082/api/proyecto
+- suma:http://216.238.69.86:8082/api/suma?a=5&b=3
+- perfil: http://216.238.69.86:8082/api/perfil
+- saludo:http://216.238.69.86:8082/api/saludo/ana
